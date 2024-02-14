@@ -40,7 +40,7 @@
 
   /* Make the last card full width */
   .card:nth-last-child(1) {
-    grid-column: span 2; /* Make last card span two columns */
+    grid-column: span 3; /* Make last card span two columns */
   }
 }
 
@@ -55,4 +55,3 @@
     justify-self: center; /* Center-align individual card */
   }
 }
-
