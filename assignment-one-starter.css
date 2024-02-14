@@ -1,3 +1,5 @@
+
+
 .card-container {
   display: flex;
   flex-wrap: wrap;
@@ -39,5 +41,17 @@
   /* Make the last card full width */
   .card:nth-child(4n) {
     width: calc(100% - 2rem);
+  }
+}
+
+/* For desktop layouts */
+@media screen and (min-width: 1200px) {
+  .card {
+    width: calc(33.33% - 2rem);
+  }
+
+  /* Center-aligns every third card to maintain proper alignment */
+  .card:nth-child(3n) {
+    margin: 0 auto;
   }
 }
