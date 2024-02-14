@@ -41,15 +41,3 @@
     width: calc(100% - 2rem);
   }
 }
-
-/* For desktop layouts */
-@media screen and (min-width: 1200px) {
-  .card {
-    width: calc(33.33% - 2rem);
-  }
-
-  /* Center-aligns every third card to maintain proper alignment */
-  .card:nth-child(3n) {
-    margin: 0 auto;
-  }
-}
