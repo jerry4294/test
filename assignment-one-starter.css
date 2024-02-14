@@ -22,6 +22,7 @@
   width: 100%;
   height: auto; /* Allow images to maintain their aspect ratio */
   border-radius: 0.5rem 0.5rem 0 0;
+  border-bottom:0.25rem solid #fc0;
   object-fit: cover; /* Ensure images maintain aspect ratio and cover the container */
 }
 
@@ -35,12 +36,19 @@
 /* For tablet layouts */
 @media screen and (min-width: 768px) and (max-width: 1199px) {
   .card-container {
-    grid-template-columns: repeat(2, 1fr); /* Two cards per row */
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); /* Two columns */
+    gap: 1rem;
   }
 
   /* Make the last card full width */
   .card:nth-last-child(1) {
-    grid-column: span 3; /* Make last card span two columns */
+    grid-column: span 2; /* Make last card span two columns */
+  }
+
+  /* Reset flex-direction for card content */
+  .card-content {
+    flex-direction: row; /* Reset flex-direction to default row */
   }
 }
 
